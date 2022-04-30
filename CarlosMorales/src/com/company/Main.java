@@ -17,7 +17,7 @@ public class Main {
         var perimeter = rectangle.perimeter();
         var area = rectangle.area();
         System.out.println(perimeter);
-        System.out.println();
+        System.out.println(area);
     }
 
 }
