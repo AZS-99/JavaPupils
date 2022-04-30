@@ -6,10 +6,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Enter the length:");
-        var scanner = new Scanner(System.in); // Equivalent of input in java
-        var side = scanner.nextInt();
-        var hexagon =
+        System.out.println("Enter the width");
+        var scanner = new Scanner(System.in);
+        var width = scanner.nextInt();
+
+        System.out.println("Enter the length");
+        var length = scanner.nextInt();
+
+        var rectangle = new Rectangle(width, length);
+        var perimeter = rectangle.perimeter();
+        var area = rectangle.area();
+        System.out.println(perimeter);
+        System.out.println();
     }
 
 }
