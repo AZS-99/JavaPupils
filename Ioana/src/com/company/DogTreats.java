@@ -26,6 +26,7 @@ sad
 
 Explanation of Output for Sample Input 1
 Barley’s happiness score is 1 × 3 + 2 × 1 + 3 × 0 = 5, so he will be sad.
+
 Sample Input 2
 3
 2
@@ -55,5 +56,12 @@ public class DogTreats {
         l = scanner.nextInt();
     }
 
-    public void
+    public void print(){
+        var happinessScore = 1 * s + 2 * m + 3 * l;
+
+        if(happinessScore >= 10)
+            System.out.println("happy");
+        else
+            System.out.println("sad");
+    }
 }
