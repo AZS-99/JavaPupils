@@ -49,7 +49,13 @@ public class J1 {
     public String answer(){
 
         if(angle1 + angle2 + angle3 == 180){
-
+            if(angle1 == angle2 && angle1 == angle3) {
+                return "Equilateral";
+            } else if(angle1 == angle2 || angle1 == angle3 || angle2 == angle3){
+                return "Isosceles";
+            } else {
+                return "Scalene";
+            }
         } else {
             return "Error";
         }
